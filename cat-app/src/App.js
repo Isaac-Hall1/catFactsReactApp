@@ -2,7 +2,7 @@ import "./index.css"
 import React from 'react';
 const urlImage = `https://api.thecatapi.com/v1/images/search`;
 const urlFact = 'https://catfact.ninja/fact?max_length=140';
-const api_key = "live_hEDtOrUQH52rtHsPsoOkF8aHRIV2bs028HlnJUX85JM8kH3SJCITH5BGVNZqwES2";
+const api_key = process.env.API_KEY;
 function Stuff({img, fact, butDisabled, clickHandler}){
   return(    
     <div className="head">
